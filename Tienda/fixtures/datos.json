@@ -1,0 +1,572 @@
+[
+  {
+    "model": "Tienda.usuario",
+    "pk": 1,
+    "fields": {
+      "nombre": "Juan Pérez",
+      "identificador": 10001,
+      "fecha_nacimiento": "1990-05-12",
+      "correo_electronico": "juan.perez@example.com"
+    }
+  },
+  {
+    "model": "Tienda.usuario",
+    "pk": 2,
+    "fields": {
+      "nombre": "Ana Gómez",
+      "identificador": 10002,
+      "fecha_nacimiento": "1985-11-23",
+      "correo_electronico": "ana.gomez@example.com"
+    }
+  },
+  {
+    "model": "Tienda.usuario",
+    "pk": 3,
+    "fields": {
+      "nombre": "Carlos López",
+      "identificador": 10003,
+      "fecha_nacimiento": "1992-02-15",
+      "correo_electronico": "carlos.lopez@example.com"
+    }
+  },
+  {
+    "model": "Tienda.usuario",
+    "pk": 4,
+    "fields": {
+      "nombre": "María Torres",
+      "identificador": 10004,
+      "fecha_nacimiento": "1988-07-09",
+      "correo_electronico": "maria.torres@example.com"
+    }
+  },
+  {
+    "model": "Tienda.usuario",
+    "pk": 5,
+    "fields": {
+      "nombre": "Luis Martínez",
+      "identificador": 10005,
+      "fecha_nacimiento": "1995-12-30",
+      "correo_electronico": "luis.martinez@example.com"
+    }
+  },
+  {
+    "model": "Tienda.perfilusuario",
+    "pk": 1,
+    "fields": {
+      "usuario": 1,
+      "bio": "Amante de la moda y la tecnología.",
+      "direccion": "Calle Falsa 123",
+      "telefono": "555-1234",
+      "sitio_web": "https://juanperez.com"
+    }
+  },
+  {
+    "model": "Tienda.perfilusuario",
+    "pk": 2,
+    "fields": {
+      "usuario": 2,
+      "bio": "Fan de ropa sostenible.",
+      "direccion": "Avenida Siempre Viva 45",
+      "telefono": "555-5678",
+      "sitio_web": ""
+    }
+  },
+  {
+    "model": "Tienda.perfilusuario",
+    "pk": 3,
+    "fields": {
+      "usuario": 3,
+      "bio": "",
+      "direccion": "Calle Jardín 12",
+      "telefono": "",
+      "sitio_web": ""
+    }
+  },
+  {
+    "model": "Tienda.perfilusuario",
+    "pk": 4,
+    "fields": {
+      "usuario": 4,
+      "bio": "Apasionada por la moda y los accesorios.",
+      "direccion": "Plaza Central 7",
+      "telefono": "555-8765",
+      "sitio_web": "https://mariatorres.com"
+    }
+  },
+  {
+    "model": "Tienda.perfilusuario",
+    "pk": 5,
+    "fields": {
+      "usuario": 5,
+      "bio": "",
+      "direccion": "",
+      "telefono": "555-4321",
+      "sitio_web": ""
+    }
+  },
+  {
+    "model": "Tienda.marca",
+    "pk": 1,
+    "fields": {
+      "nombre": "FashionCo",
+      "pais_origen": "España",
+      "descripcion": "Marca de ropa moderna y sostenible.",
+      "año_fundacion": 2005
+    }
+  },
+  {
+    "model": "Tienda.marca",
+    "pk": 2,
+    "fields": {
+      "nombre": "UrbanStyle",
+      "pais_origen": "USA",
+      "descripcion": "Ropa urbana y casual.",
+      "año_fundacion": 2010
+    }
+  },
+  {
+    "model": "Tienda.marca",
+    "pk": 3,
+    "fields": {
+      "nombre": "EleganceWear",
+      "pais_origen": "Francia",
+      "descripcion": "Ropa elegante para eventos.",
+      "año_fundacion": 1998
+    }
+  },
+  {
+    "model": "Tienda.marca",
+    "pk": 4,
+    "fields": {
+      "nombre": "Sporty",
+      "pais_origen": "Alemania",
+      "descripcion": "Ropa deportiva y cómoda.",
+      "año_fundacion": 2000
+    }
+  },
+  {
+    "model": "Tienda.marca",
+    "pk": 5,
+    "fields": {
+      "nombre": "ClassicLine",
+      "pais_origen": "Italia",
+      "descripcion": "Moda clásica y atemporal.",
+      "año_fundacion": 1980
+    }
+  },
+  {
+    "model": "Tienda.descuento",
+    "pk": 1,
+    "fields": {
+      "codigo": "DESC10",
+      "porcentaje": "10.00",
+      "activo": true,
+      "fecha_expiracion": "2025-12-31"
+    }
+  },
+  {
+    "model": "Tienda.descuento",
+    "pk": 2,
+    "fields": {
+      "codigo": "DESC20",
+      "porcentaje": "20.00",
+      "activo": true,
+      "fecha_expiracion": "2025-11-30"
+    }
+  },
+  {
+    "model": "Tienda.descuento",
+    "pk": 3,
+    "fields": {
+      "codigo": "DESC15",
+      "porcentaje": "15.00",
+      "activo": false,
+      "fecha_expiracion": "2024-06-30"
+    }
+  },
+  {
+    "model": "Tienda.descuento",
+    "pk": 4,
+    "fields": {
+      "codigo": "DESC5",
+      "porcentaje": "5.00",
+      "activo": true,
+      "fecha_expiracion": "2026-01-15"
+    }
+  },
+  {
+    "model": "Tienda.descuento",
+    "pk": 5,
+    "fields": {
+      "codigo": "DESC25",
+      "porcentaje": "25.00",
+      "activo": true,
+      "fecha_expiracion": "2025-09-30"
+    }
+  },
+  {
+    "model": "Tienda.prenda",
+    "pk": 1,
+    "fields": {
+      "nombre": "Camiseta Básica",
+      "descripcion": "Camiseta de algodón cómoda.",
+      "talla": "M",
+      "color": "Blanco",
+      "precio": "15.00",
+      "marca": 1,
+      "descuento": null,
+      "usuarios": [1,2]
+    }
+  },
+  {
+    "model": "Tienda.prenda",
+    "pk": 2,
+    "fields": {
+      "nombre": "Jeans Ajustados",
+      "descripcion": "Jeans modernos y cómodos.",
+      "talla": "L",
+      "color": "Azul",
+      "precio": "40.00",
+      "marca": 2,
+      "descuento": 2,
+      "usuarios": []
+    }
+  },
+  {
+    "model": "Tienda.prenda",
+    "pk": 3,
+    "fields": {
+      "nombre": "Chaqueta Elegante",
+      "descripcion": "Chaqueta para ocasiones especiales.",
+      "talla": "M",
+      "color": "Negro",
+      "precio": "120.00",
+      "marca": 3,
+      "descuento": 3,
+      "usuarios": [1,4]
+    }
+  },
+  {
+    "model": "Tienda.prenda",
+    "pk": 4,
+    "fields": {
+      "nombre": "Pantalón Deportivo",
+      "descripcion": "Cómodo para deporte y ocio.",
+      "talla": "XL",
+      "color": "Gris",
+      "precio": "35.00",
+      "marca": 4,
+      "descuento": 4,
+      "usuarios": [3,5]
+    }
+  },
+  {
+    "model": "Tienda.prenda",
+    "pk": 5,
+    "fields": {
+      "nombre": "Camisa Clásica",
+      "descripcion": "Camisa de corte clásico.",
+      "talla": "S",
+      "color": "Celeste",
+      "precio": "50.00",
+      "marca": 5,
+      "descuento": 5,
+      "usuarios": [2,4,5]
+    }
+  },
+  {
+    "model": "Tienda.inventario",
+    "pk": 1,
+    "fields": {
+      "prenda": 1,
+      "cantidad_disponible": 50,
+      "ubicacion_almacen": "Almacén A",
+      "stock_minimo": 5,
+      "stock_maximo": 100
+    }
+  },
+  {
+    "model": "Tienda.inventario",
+    "pk": 2,
+    "fields": {
+      "prenda": 2,
+      "cantidad_disponible": 30,
+      "ubicacion_almacen": "Almacén B",
+      "stock_minimo": 5,
+      "stock_maximo": 50
+    }
+  },
+  {
+    "model": "Tienda.inventario",
+    "pk": 3,
+    "fields": {
+      "prenda": 3,
+      "cantidad_disponible": 20,
+      "ubicacion_almacen": "Almacén C",
+      "stock_minimo": 2,
+      "stock_maximo": 30
+    }
+  },
+  {
+    "model": "Tienda.inventario",
+    "pk": 4,
+    "fields": {
+      "prenda": 4,
+      "cantidad_disponible": 40,
+      "ubicacion_almacen": "Almacén D",
+      "stock_minimo": 5,
+      "stock_maximo": 50
+    }
+  },
+  {
+    "model": "Tienda.inventario",
+    "pk": 5,
+    "fields": {
+      "prenda": 5,
+      "cantidad_disponible": 25,
+      "ubicacion_almacen": "Almacén E",
+      "stock_minimo": 3,
+      "stock_maximo": 40
+    }
+  },
+  {
+    "model": "Tienda.pedido",
+    "pk": 1,
+    "fields": {
+      "usuario": 1,
+      "fecha": "2025-10-20T10:30:00",
+      "total": "130.00",
+      "estado": "PEND",
+      "direccion_envio": "Calle Falsa 123",
+      "prenda": [1,3]
+    }
+  },
+  {
+    "model": "Tienda.pedido",
+    "pk": 2,
+    "fields": {
+      "usuario": 2,
+      "fecha": "2025-10-19T14:45:00",
+      "total": "90.00",
+      "estado": "PROC",
+      "direccion_envio": "Avenida Siempre Viva 45",
+      "prenda": [2,5]
+    }
+  },
+  {
+    "model": "Tienda.pedido",
+    "pk": 3,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2025-10-18T09:15:00",
+      "total": "35.00",
+      "estado": "ENV",
+      "direccion_envio": "Calle Jardín 12",
+      "prenda": [4]
+    }
+  },
+  {
+    "model": "Tienda.pedido",
+    "pk": 4,
+    "fields": {
+      "usuario": 4,
+      "fecha": "2025-10-20T12:00:00",
+      "total": "170.00",
+      "estado": "ENT",
+      "direccion_envio": "Plaza Central 7",
+      "prenda": [3,5]
+    }
+  },
+  {
+    "model": "Tienda.pedido",
+    "pk": 5,
+    "fields": {
+      "usuario": 5,
+      "fecha": "2025-10-21T08:30:00",
+      "total": "55.00",
+      "estado": "PEND",
+      "direccion_envio": "Calle Secundaria 9",
+      "prenda": [4,5]
+    }
+  },
+  {
+    "model": "Tienda.detallepedido",
+    "pk": 1,
+    "fields": {
+      "pedido": 1,
+      "prenda": 1,
+      "fecha_agregado": "2025-10-20T10:30:00",
+      "fecha_entrega": "2025-10-22T10:30:00",
+      "cantidad": 2,
+      "precio": "15.00"
+    }
+  },
+  {
+    "model": "Tienda.detallepedido",
+    "pk": 2,
+    "fields": {
+      "pedido": 1,
+      "prenda": 3,
+      "fecha_agregado": "2025-10-20T10:31:00",
+      "fecha_entrega": "2025-10-22T10:31:00",
+      "cantidad": 1,
+      "precio": "120.00"
+    }
+  },
+  {
+    "model": "Tienda.detallepedido",
+    "pk": 3,
+    "fields": {
+      "pedido": 2,
+      "prenda": 2,
+      "fecha_agregado": "2025-10-19T14:45:00",
+      "fecha_entrega": "2025-10-21T14:45:00",
+      "cantidad": 1,
+      "precio": "40.00"
+    }
+  },
+  {
+    "model": "Tienda.detallepedido",
+    "pk": 4,
+    "fields": {
+      "pedido": 2,
+      "prenda": 5,
+      "fecha_agregado": "2025-10-19T14:46:00",
+      "fecha_entrega": "2025-10-21T14:46:00",
+      "cantidad": 1,
+      "precio": "50.00"
+    }
+  },
+  {
+    "model": "Tienda.detallepedido",
+    "pk": 5,
+    "fields": {
+      "pedido": 3,
+      "prenda": 4,
+      "fecha_agregado": "2025-10-18T09:15:00",
+      "fecha_entrega": "2025-10-20T09:15:00",
+      "cantidad": 1,
+      "precio": "35.00"
+    }
+  },
+  {
+    "model": "Tienda.reseña",
+    "pk": 1,
+    "fields": {
+      "usuarios": [1],
+      "prenda": 1,
+      "calificacion": 5,
+      "comentario": "Muy cómoda y bonita.",
+      "fecha": "2025-10-20T11:00:00",
+      "recomendado": true
+    }
+  },
+  {
+    "model": "Tienda.reseña",
+    "pk": 2,
+    "fields": {
+      "usuarios": [2],
+      "prenda": 2,
+      "calificacion": 4,
+      "comentario": "Buen ajuste, aunque un poco larga.",
+      "fecha": "2025-10-19T15:00:00",
+      "recomendado": true
+    }
+  },
+  {
+    "model": "Tienda.reseña",
+    "pk": 3,
+    "fields": {
+      "usuarios": [3],
+      "prenda": 4,
+      "calificacion": 3,
+      "comentario": "Cómoda pero esperaba mejor tela.",
+      "fecha": "2025-10-18T10:00:00",
+      "recomendado": false
+    }
+  },
+  {
+    "model": "Tienda.reseña",
+    "pk": 4,
+    "fields": {
+      "usuarios": [4],
+      "prenda": 3,
+      "calificacion": 5,
+      "comentario": "Excelente calidad, la recomiendo.",
+      "fecha": "2025-10-20T13:00:00",
+      "recomendado": true
+    }
+  },
+  {
+    "model": "Tienda.reseña",
+    "pk": 5,
+    "fields": {
+      "usuarios": [5],
+      "prenda": 5,
+      "calificacion": 4,
+      "comentario": "Buen corte y color.",
+      "fecha": "2025-10-21T09:00:00",
+      "recomendado": true
+    }
+  },
+  {
+    "model": "Tienda.cesta",
+    "pk": 1,
+    "fields": {
+      "usuario": 1,
+      "prenda": [1,3],
+      "fecha_creacion": "2025-10-20T10:00:00",
+      "activo": true,
+      "objetos_en_cesta": 2,
+      "precio": "150.00"
+    }
+  },
+  {
+    "model": "Tienda.cesta",
+    "pk": 2,
+    "fields": {
+      "usuario": 2,
+      "prenda": [2,5],
+      "fecha_creacion": "2025-10-19T14:00:00",
+      "activo": true,
+      "objetos_en_cesta": 2,
+      "precio": "90.00"
+    }
+  },
+  {
+    "model": "Tienda.cesta",
+    "pk": 3,
+    "fields": {
+      "usuario": 3,
+      "prenda": [4],
+      "fecha_creacion": "2025-10-18T08:30:00",
+      "activo": true,
+      "objetos_en_cesta": 1,
+      "precio": "35.00"
+    }
+  },
+  {
+    "model": "Tienda.cesta",
+    "pk": 4,
+    "fields": {
+      "usuario": 4,
+      "prenda": [3,5],
+      "fecha_creacion": "2025-10-20T12:30:00",
+      "activo": true,
+      "objetos_en_cesta": 2,
+      "precio": "170.00"
+    }
+  },
+  {
+    "model": "Tienda.cesta",
+    "pk": 5,
+    "fields": {
+      "usuario": 5,
+      "prenda": [4,5],
+      "fecha_creacion": "2025-10-21T08:00:00",
+      "activo": true,
+      "objetos_en_cesta": 2,
+      "precio": "85.00"
+    }
+  }
+]
